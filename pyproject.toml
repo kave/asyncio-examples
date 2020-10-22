@@ -1,13 +1,19 @@
 [tool.poetry]
-name = "boilerplate-repo"
+name = "asyncio-example"
 version = "0.1.0"
-description = "Boilerplate for my repos"
+description = "A set of Asynchronous Python3 Examples"
 authors = ["Apau, Emmanuel <e@mechanicode.io>"]
 license = "Apache License 2.0"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 python-dotenv = "^0.13.0"
+fastapi = "^0.61.1"
+uvicorn = "^0.12.1"
+requests = "^2.24.0"
+lorem = "^0.1.1"
+flask = "^1.1.2"
+gevent = "^20.9.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.3"
