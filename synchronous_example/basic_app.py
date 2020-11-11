@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 import config
 
@@ -7,6 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
+    print(request)
+    print(request.headers)
     return 'Hello, World!'
 
 

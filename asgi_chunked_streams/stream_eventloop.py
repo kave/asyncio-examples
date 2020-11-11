@@ -12,6 +12,7 @@ async def read_body(receive):
 
     while more_body:
         message = await receive()
+        print(f"received msg {message.get('body', b'')}")
         body += message.get('body', b'') + b' '
         more_body = message.get('more_body', False)  # checks if the request is done sending messages
 
@@ -35,7 +36,7 @@ async def app(scope, receive, send):
         'type': 'http.response.body',
         'body': body,
     })
-    print(body)
+    print(f'Full request message: {body}')
 
 
 if __name__ == "__main__":

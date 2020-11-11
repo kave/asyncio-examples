@@ -2,12 +2,14 @@ import asyncio
 import time
 
 
+# co-routine
 async def say_after(delay, msg):
     await asyncio.sleep(delay)
     print(msg)
 
 
 async def run():
+    # Wraps co-routine in a task
     task1 = asyncio.create_task(
         say_after(2, 'hello'))
 
