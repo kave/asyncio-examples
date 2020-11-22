@@ -14,6 +14,7 @@ requests = "^2.24.0"
 lorem = "^0.1.1"
 flask = "^1.1.2"
 gevent = "^20.9.0"
+websockets = "^8.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.3"
