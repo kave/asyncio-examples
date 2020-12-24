@@ -13,4 +13,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.run(host=config.HOST, port=config.PORT, threaded=False)
+    app.run(host=config.HOST, port=config.PORT, threaded=True)

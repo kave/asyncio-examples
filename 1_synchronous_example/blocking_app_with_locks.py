@@ -17,20 +17,20 @@ This means that only one thread can be in a state of execution at any point in t
 
 @app.route('/')
 def hello_world():
-    slow_processing(1)
+    slow_processing(1, 10)
     return 'Hello, World!'
 
 
 @app.route('/healthz')
 def healthz():
-    slow_processing(2)
+    slow_processing(2, 1)
     return 'OK'
 
 
-def slow_processing(pid):  # blocks the python interpreter
+def slow_processing(pid, duration):  # blocks the python interpreter
     with lock:
         print(f'#{pid}. does some processing')
-        sleep(10)
+        sleep(duration)
 
 
 if __name__ == '__main__':
