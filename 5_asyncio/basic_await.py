@@ -3,7 +3,7 @@ import time
 
 
 async def say_after(delay, msg):
-    await asyncio.sleep(delay)
+    await asyncio.sleep(delay)  # non-blocking action
     print(msg)
 
 
@@ -22,4 +22,4 @@ async def run():
 
 if __name__ == '__main__':
     # print(run())
-    asyncio.run(run())
+    asyncio.run(run(), debug=True)

@@ -12,9 +12,9 @@ def task(message):
 def main():
     executor = ProcessPoolExecutor(4)  # matches # of cores on your machine
     future = executor.submit(task, "Completed")
-    print(f'Future Status: {future.done()}')
+    print(f'Future isDone Status: {future.done()}')
     # sleep(3)
-    # print(f'Future Status: {future.done()}')
+    # print(f'Future isDone Status: {future.done()}')
     # print(f'Future Result: {future.result()}')
 
 
