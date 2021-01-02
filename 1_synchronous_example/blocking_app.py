@@ -26,4 +26,4 @@ def healthz():
 
 
 if __name__ == '__main__':
-    app.run(host=config.HOST, port=config.PORT, threaded=False)
+    app.run(host='127.0.0.1', port='9000', threaded=False)

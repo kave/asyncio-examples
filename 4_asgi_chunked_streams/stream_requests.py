@@ -2,8 +2,6 @@ import time
 
 import requests
 
-import config
-
 s = requests.Session()
 
 
@@ -17,5 +15,5 @@ def generate_request():
 
 
 with requests.Session() as client:
-    resp = client.post(f'http://{config.HOST}:{config.PORT}', data=generate_request())
+    resp = client.post(f'http://127.0.0.1:9000', data=generate_request())
     print(resp, resp.text.strip())

@@ -34,4 +34,4 @@ def slow_processing(pid, duration):  # blocks the python interpreter
 
 
 if __name__ == '__main__':
-    app.run(host=config.HOST, port=config.PORT)
+    app.run(host='127.0.0.1', port='9000')
