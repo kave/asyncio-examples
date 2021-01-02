@@ -1,0 +1,11 @@
+fastapi==0.61.2
+flake8==3.8.4
+Flask==1.1.2
+gevent==20.12.1
+greenlet==0.4.17
+python-dotenv==0.13.0
+requests==2.25.1
+starlette==0.13.6
+urllib3==1.26.2
+uvicorn==0.12.3
+websockets==8.1
