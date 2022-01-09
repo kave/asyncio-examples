@@ -2,8 +2,6 @@ import time
 
 import requests
 
-s = requests.Session()
-
 
 def generate_request():
     print('Sending 1st Msg')
