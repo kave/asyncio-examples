@@ -1,7 +1,5 @@
 import uvicorn
 
-import config
-
 
 async def read_body(receive):
     """

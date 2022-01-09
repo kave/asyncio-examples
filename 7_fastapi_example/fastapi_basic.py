@@ -3,8 +3,6 @@ from typing import Optional
 import uvicorn
 from fastapi import FastAPI
 
-import config
-
 app = FastAPI()
 
 

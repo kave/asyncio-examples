@@ -3,8 +3,6 @@ from time import sleep
 
 from flask import Flask
 
-import config
-
 app = Flask(__name__)
 lock = Lock()
 

@@ -2,8 +2,6 @@ import pprint
 
 import uvicorn
 
-import config
-
 
 async def app(scope, receive, send):
     assert scope['type'] == 'http'
