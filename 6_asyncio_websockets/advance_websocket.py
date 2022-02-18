@@ -26,13 +26,13 @@ def users_status():
 async def notify_counter_state():
     if USERS:  # asyncio.wait doesn't accept an empty list
         message = counter_status()
-        await asyncio.wait([user.send(message) for user in USERS])
+        await asyncio.wait([asyncio.create_task(user.send(message)) for user in USERS])
 
 
 async def notify_users():
     if USERS:  # asyncio.wait doesn't accept an empty list
         message = users_status()
-        await asyncio.wait([user.send(message) for user in USERS])
+        await asyncio.wait([asyncio.create_task(user.send(message)) for user in USERS])
 
 
 async def register(websocket):
